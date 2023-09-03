@@ -1,15 +1,54 @@
-<!-- cart.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Shopping Cart</title>
+    <!-- Add Bootstrap CSS (you can host it or use a CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./cart.css">
 </head>
 <body>
+    <!-- Apply dark theme to the entire body -->
+    <!-- navbar.html -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">RMC CEMENT PRODUCTS</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./inventory.html">Inventory</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <h1 class="title">Shopping Cart</h1>
         <div class="cart-container">
-            <table class="cart-table">
+            <table class="table table-bordered table-striped">
+                <!-- Apply Bootstrap table styles -->
                 <thead>
                     <tr>
                         <th>Product Name</th>
@@ -24,9 +63,12 @@
             </table>
             <div class="total-container">
                 <h2>Total: $<span id="total_amount">0.00</span></h2>
-                <button class="checkout-button" onclick="checkout()">Checkout</button>
+                <button class="btn btn-primary" onclick="checkout()">Checkout</button>
             </div>
         </div>
     </div>
+    
+    <!-- Add Bootstrap JavaScript (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Website</title>
+    
+    <!-- Add Bootstrap 5 CSS (you can host it or use a CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link your custom CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="bg-dark text-light">
+        <div class="container py-4">
+            <h1>Welcome to Delivery Website</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Delivery Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./inventory.html">Inventory</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="products bg-light py-5">
+            <div class="container">
+                <h2 class="text-dark">Products Available</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/blockpng.png" class="card-img-top img-fluid fixed-image" alt="hollow block">
+                            <div class="card-body">
+                                <h3 class="card-title">hollow block</h3>
+                                <p class="card-text">Description of hollow block.</p>
+                                <p class="card-text">Price: $10.00</p>
+                                <button class="btn btn-dark">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/interlock.png" class="card-img-top img-fluid fixed-image" alt="Interlock">
+                            <div class="card-body">
+                                <h3 class="card-title">Interlock</h3>
+                                <p class="card-text">Description of Interlock.</p>
+                                <p class="card-text">Price: $15.00</p>
+                                <button class="btn btn-dark">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more product cards -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <p>&copy; 2023 Delivery Website</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap 5 JavaScript (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

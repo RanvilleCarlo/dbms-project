@@ -1,0 +1,36 @@
+<!-- inventory.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <link rel="stylesheet" type="text/css" href="./inventory.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Inventory Management</h1>
+        <div class="form-container">
+            <h2 class="form-title">Add New Product</h2>
+            <form action="/add_product" method="POST">
+                <div class="form-group">
+                    <label for="product_name">Product Name:</label>
+                    <input type="text" id="product_name" name="product_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+                <div class="form-group">
+                    <label for="stock_quantity">Stock Quantity:</label>
+                    <input type="text" id="stock_quantity" name="stock_quantity" required>
+                </div>
+                <button type="submit" class="submit-button">Add Product</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

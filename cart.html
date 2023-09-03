@@ -1,0 +1,32 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="./cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Shopping Cart</h1>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be displayed here -->
+                </tbody>
+            </table>
+            <div class="total-container">
+                <h2>Total: $<span id="total_amount">0.00</span></h2>
+                <button class="checkout-button" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

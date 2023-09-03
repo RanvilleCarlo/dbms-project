@@ -12,49 +12,70 @@
     />
 
     <!-- Link your custom CSS file (product.css) -->
-
+    <style>
+      .custom-border-radius {
+        border-radius: 15px;
+        border: 5px solid white;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-dark text-light">
-        <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                  <img src="./assets/dev2.jpg" alt="Your Logo" class="logo custom-border-radius" width="250" height="100">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img
+              src="./assets/dev2.jpg"
+              alt="Your Logo"
+              class="logo custom-border-radius"
+              width="250"
+              height="100"
+            />
+          </div>
+          <footer class="bg-dark text-light py-3">
+            <div class="container text-left">
+              <!-- Center align the content -->
+              <p>&copy; 2023 RMC CEMENT PRODUCTS</p>
+            </div>
+          </footer>
 
-                </div>
-                <footer class="bg-dark text-light py-3">
-                  <div class="container text-left"> <!-- Center align the content -->
-                      <p>&copy; 2023 RMC CEMENT PRODUCTS</p>
-                  </div>
-              </footer>
-              
-                <div class="col">            
-                    <h1>WELCOME TO RMC CEMENT PRODUCTS</h1>
+          <div class="col">
+            <h1>WELCOME TO RMC CEMENT PRODUCTS</h1>
+          </div>
         </div>
+      </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">FOCUS ON QUALITY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" Cascadia Mono-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cart.html">Cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./inventory.html">Inventory</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">FOCUS ON QUALITY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          Cascadia Mono-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./inventory.html">Inventory</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="bg-light-subtle text-dark-emphasis">
@@ -72,9 +93,25 @@
           </thead>
           <tbody>
             <tr>
-              <td>Product 1</td>
-              <td>Description of Product 1</td>
-              <td>$10.00</td>
+              <td>Hollow Block</td>
+            <td>
+              "Lightweight and durable, our hollow blocks are<br>
+              the perfect choice for efficient and strong construction projects."
+            </td>
+            <td>Rs 65.00 per piece</td>
+            <td>100</td>
+            </tr>
+            <tr>
+              <td>Interlock</td>
+              <td>"Elevate your landscape with our premium interlock bricks,<br>
+                 offering both beauty and functionality for your outdoor spaces."</td>
+              <td>Rs 50.00 per piece</td>
+              <td>100</td>
+            </tr>
+            <td>Door Frames</td>
+              <td>"Sturdy and stylish, our Door Frames are designed to enhance<br>
+                the elegance and security of your living spaces.""</td>
+              <td>Rs Rs 8500.00</td>
               <td>100</td>
             </tr>
             <!-- Add more product rows -->

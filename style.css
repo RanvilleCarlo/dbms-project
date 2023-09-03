@@ -104,5 +104,31 @@ footer {
     border: 5px solid white;
     border-radius: 15px;
 }
+/* Style for the About Us section */
+.about {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center; /* Center-align text */
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; /* Make the title bold */
+    font-size: 2.5rem; /* Increase font size */
+}
+
+.about .lead {
+    font-size: 1.5rem; /* Increase font size for subtitle */
+    color: #07ff77; /* Change subtitle color */
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+
 
 

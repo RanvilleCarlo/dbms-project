@@ -67,3 +67,7 @@ body {
 .place-order-button:hover {
     background-color: #555;
 }
+.custom-border-radius {
+    border: 5px solid white;
+    border-radius: 15px;
+}

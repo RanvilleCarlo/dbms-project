@@ -74,3 +74,35 @@ footer {
 .card-title {
     text-align: center;
 } 
+/* Style for the About Us section */
+.about {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* Style for the team image within the About Us section */
+.about .img-fluid {
+    width: 80%;
+    max-width: 300px;
+    height: auto; /* Maintain the image's aspect ratio */
+    border: 5px solid #fff;
+    border-radius: 15px; /* Adjust the border-radius to make it square */
+    margin: 20px auto;
+}
+.custom-border-radius {
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+

@@ -10,7 +10,53 @@
     
     <!-- Link your custom CSS file -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
+<style>
+   .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.item {
+    max-width: 150%;
+}
+.card img {
+  max-width: 150%;
+  max-height: 150%;
+
+  
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0.5em; /* Added 'em' unit for border-radius */
+  max-width: 600%; /* Increased max-width to 200% */
+}
+
+.carousel-inner {
+  padding: 2em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+</style>
+
+
 <body>
     <header class="bg-dark text-light">
         <div class="container py-4">
@@ -51,7 +97,103 @@
         </div>
     </nav>
     <main>
-        <section class="products bg-light py-5">
+        <div class="container">
+            <h2 class="text-dark">Products Available</h2>
+            <br>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card h=100">
+                            <img src="./assets/hollow.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Hollow Block</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for <br>
+                                efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h=100">
+                            <img src="./assets/interlock.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interlock</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h=100">
+                            <img src="./assets/dev3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interlock</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h=100">
+                            <img src="./assets/dev4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interlock</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h=100">
+                            <img src="./assets/chimney.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interlock</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card h=100">
+                            
+                            <img src="./assets/exhuast.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interlock</h5>
+                              <p class="card-text">"Lightweight and durable, our hollow blocks are the perfect choice for efficient and strong construction projects."</p>
+                              <br>
+                                <p class="card-text">Price: Rs 65.00 per piece</p>
+                                <br>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+        <!-- <section class="products bg-light py-5">
             <div class="container">
                 <h2 class="text-dark">Products Available</h2>
                 <br>
@@ -95,14 +237,53 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add more product cards -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/dev4.png" class="card-img-top img-fluid fixed-image" alt="Interlock">
+                            <div class="card-body">
+                                <h3 class="card-title">Window Frames</h3>
+                                <p class="card-text">"Elevate your landscape with our premium interlock bricks, offering both beauty and functionality for your outdoor spaces.".</p>
+                                <br>
+                                <p class="card-text">Price: Rs 4500.00 per piece</p>
+                                <br>
+                                <button class="btn btn-dark">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/chimney.png" class="card-img-top img-fluid fixed-image" alt="Interlock">
+                            <div class="card-body">
+                                <h3 class="card-title">Cement Chimneys</h3>
+                                <p class="card-text">A chimney is a vertical structure that provides a passage for smoke, gases, and combustion byproducts to escape from a fireplace, stove, or heating appliance</p>
+                                <br>
+                                <p class="card-text">Price: Rs 6500.00</p>
+                                <br>
+                                <button class="btn btn-dark">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/exhuast.png" class="card-img-top img-fluid fixed-image" alt="Interlock">
+                            <div class="card-body">
+                                <h3 class="card-title">Exhaust Window</h3>
+                                <p class="card-text">An exhaust fan is a mechanical ventilation device designed to remove stale air, odors, and pollutants from enclosed spaces such as kitchens, bathrooms, and workshops.</p>
+                                <br>
+                                <p class="card-text">Price: Rs 15000.00</p>
+                                <br>
+                                <button class="btn btn-dark">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    Add more product cards
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="about bg-dark text-light py-5">
             <div class="container">
                 <div class="text-center"> <!-- Center aligns the title -->
-                    <h2 class="display-4">About Us</h2>
+                    <h2 class="display-4">Our Vision</h2>
             <p class="lead">___________________</p>
         </div>
 
@@ -131,13 +312,58 @@
         </section>
         
     </main>
-    <footer class="bg-dark text-light py-3">
+    <footer class="bg-dark text-light py-5">
         <div class="container">
-            <p>&copy; 2023 RMC CEMENT PRODUCTS</p>
+         <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <p><strong>RMC CEMENT PRODUCTS</strong></p>
+                    <p>123 Main Street</p>
+                    <p>Bantwal, Karnataka - 574211</p>
+                    <p>Email: info@rmcproducts.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 RMC CEMENT PRODUCTS</p>
         </div>
     </footer>
+    
 
     <!-- Add Bootstrap 5 JavaScript (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+
+
+
+
 </body>
 </html>

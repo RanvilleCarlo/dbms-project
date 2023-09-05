@@ -35,7 +35,7 @@ main {
     padding: 20px;
 }
 
-.products {
+/* .products {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -51,7 +51,7 @@ main {
 .product-card img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Style the footer */
 footer {
@@ -65,15 +65,15 @@ footer {
     height: 420px; /* Set your desired height */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
-.card {
+/* .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .card-title {
-    text-align: center;
-} 
+    text-align: center; */
+
 /* Style for the About Us section */
 .about {
     background-image: url('background-image.jpg');
@@ -109,7 +109,7 @@ footer {
     background-image: url('background-image.jpg');
     background-size: cover;
     background-position: center;
-    padding: 15px 0;
+    padding: 25px 0;
     color: #fff;
     text-align: center; /* Center-align text */
 }
@@ -128,6 +128,7 @@ footer {
 .about p {
     font-size: 1.2rem;
 }
+
 
 
 

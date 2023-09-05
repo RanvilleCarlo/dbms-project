@@ -1,55 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Login</h1>
-        <form id="login-form">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-    </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Add Bootstrap JavaScript and jQuery (optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" >
+    <title>Login Form</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
 
-    <script>
-        document.getElementById('login-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+body{
+    background: linear-gradient(90deg, rgb(4, 1, 73) 0%, rgb(81, 71, 97) 35%, rgb(81, 71, 97) 35%,rgb(185, 195, 197) 100%);
+    font-family: 'Poppins', sans-serif;
 
-            try {
-                const response = await fetch('http://localhost:3000/login', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ username, password }),
-                });
+}
+form{
+    border-radius: 20px;
+    margin-top: 150px !important;
+    width: 24% !important;
+    background-color: white !important;
+    padding: 50px;
+}
 
-                if (response.status === 200) {
-                    alert('Login successful');
-                } else {
-                    alert('Login failed');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        });
-    </script>
-</body>
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,14,154,1) 35%, rgba(0,212,255,1) 100%);
+    
+}
+
+.form-control{
+    color: rgba(0,0,0,.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    }
+ h4{
+    font-size: 2rem !important;
+    font-weight: 700;
+ }  
+ .form-label{
+    font-weight: 800 !important;
+ }
+@media only screen and (max-width: 600px) {
+    form {
+        width: 100% !important;
+    }
+  }
+  .white-text {
+            color: white;
+        }
+  </style>
+  <body>
+        <div class="container-fluid">
+            <form class="mx-auto">
+                <h4 class="text-center">Login</h4>
+                <div class="mb-3 mt-5">
+                  <label for="exampleInputEmail1" class="form-label">User Name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div id="emailHelp" class="form-text mt-3">Forget password ?</div>
+                </div>
+              
+                <button type="submit" class="btn btn-primary mt-5">Login</button>
+              </form>
+              <p class="text-center mt-3"><span class="white-text">Don't have an account?</span> <a href="./signup.html">Sign Up</a></p>
+        </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
